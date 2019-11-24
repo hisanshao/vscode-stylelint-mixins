@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "displayName": "stylelint-mixins",
   "description": "Modern CSS/SCSS/Less linter for vscode, support auto fix on save, configFile, ignorePath, configBasedir,config, configOverrides.",
-  "publisher": "hi_sanshao",
-  "repository": "https://github.com/hi_sanshao/vscode-stylelint-mixins",
-  "homepage": "https://github.com/hi_sanshao/vscode-stylelint-mixins#readme",
-  "bugs": "https://github.com/hi_sanshao/vscode-stylelint-mixins/issues",
+  "publisher": "hisanshao",
+  "repository": "https://github.com/hisanshao/vscode-stylelint-mixins",
+  "homepage": "https://github.com/hisanshao/vscode-stylelint-mixins#readme",
+  "bugs": "https://github.com/hisanshao/vscode-stylelint-mixins/issues",
   "license": "ISC",
-  "icon": "https://raw.githubusercontent.com/hi_sanshao/vscode-stylelint-mixins/master/media/icon.png",
+  "icon": "https://raw.githubusercontent.com/hisanshao/vscode-stylelint-mixins/master/media/icon.png",
   "galleryBanner": {
     "color": "#32CD32",
     "theme": "light"

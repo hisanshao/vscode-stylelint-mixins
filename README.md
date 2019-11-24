@@ -4,7 +4,7 @@ A [Visual Studio Code](https://code.visualstudio.com/) extension to lint [CSS](h
 
 Fork from [vscode-stylelint-plus](https://github.com/shinnn/vscode-stylelint-plus).
 
-![screenshot](https://raw.githubusercontent.com/hi_sanshao/vscode-stylelint-mixins/master/media/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/hisanshao/vscode-stylelint-mixins/master/media/screenshot.png)
 
 ## Installation
 
@@ -15,7 +15,7 @@ Read the [extension installation guide](https://code.visualstudio.com/docs/edito
 
 ### Optional (but recommended) setup
 
-<img align="right" width="430" alt="duplicate messages from both the built-in linter and vscode-stylelint-mixins" src="https://raw.githubusercontent.com/hi_sanshao/vscode-stylelint-mixins/master/media/duplicate.png">
+<img align="right" width="430" alt="duplicate messages from both the built-in linter and vscode-stylelint-mixins" src="https://raw.githubusercontent.com/hisanshao/vscode-stylelint-mixins/master/media/duplicate.png">
 
 To prevent both [the editor built-in linters](https://code.visualstudio.com/docs/languages/css#_syntax-verification-linting) `[css]` `[less]` `[scss]` and this extension `[stylelint]` from reporting essentially the same errors like in the screenshot, disable the built-in ones in User or Workspace [setting](https://code.visualstudio.com/docs/getstarted/settings):
 
@@ -29,7 +29,7 @@ To prevent both [the editor built-in linters](https://code.visualstudio.com/docs
 
 Once a user follows [the stylelint startup guide](https://github.com/stylelint/stylelint#getting-started) by creating a [configuration](https://stylelint.io/user-guide/configuration/) file or by editing [`stylelint.*` VSCode settings](#extension-settings), stylelint automatically validates documents with these [language identifiers](https://code.visualstudio.com/docs/languages/overview#_language-id):
 
-<img align="right" width="430" alt="UI to select a language identifier" src="https://raw.githubusercontent.com/hi_sanshao/vscode-stylelint-mixins/master/media/language.png">
+<img align="right" width="430" alt="UI to select a language identifier" src="https://raw.githubusercontent.com/hisanshao/vscode-stylelint-mixins/master/media/language.png">
 
 * CSS (`css`)
 * HTML (`html`)
