@@ -15,24 +15,24 @@ let configBasedir;
 let ignorePath;
 let configFile;
 
+let ignoreDisables;
+let allowEmptyInput;
+
 const connection = createConnection(ProposedFeatures.all);
 const documents = new TextDocuments();
 
 async function validate(document, isAutoFixOnSave = false) {
   const options = {
     fix: isAutoFixOnSave,
-    configBasedir: configBasedir,
-    configFile: configFile,
-    ignorePath: ignorePath,
   };
-
-  if (config) {
-    options.config = config;
-  }
-
-  if (configOverrides) {
-    options.configOverrides = configOverrides;
-  }
+  config && (options.config = config);
+  configBasedir && (options.configBasedir = configBasedir);
+  configOverrides && (options.configOverrides = configOverrides);
+  configFile && (options.configFile = configFile);
+  ignorePath && (options.ignorePath = ignorePath);
+  
+  toString.call(ignoreDisables) === '[object Boolean]' && (options.ignoreDisables = ignoreDisables);
+  toString.call(allowEmptyInput) === '[object Boolean]' && (options.allowEmptyInput = allowEmptyInput);
 
   const documentPath = parseUri(document.uri).fsPath;
 
@@ -102,6 +102,8 @@ connection.onDidChangeConfiguration(({settings}) => {
   configBasedir = settings.stylelint.configBasedir;
   configFile = settings.stylelint.configFile;
   ignorePath = settings.stylelint.ignorePath;
+  ignoreDisables = settings.stylelint.ignoreDisables;
+  allowEmptyInput = settings.stylelint.allowEmptyInput;
 
   validateAll();
 });

@@ -2,7 +2,7 @@
   "name": "stylelint-mixins",
   "version": "0.1.1",
   "displayName": "stylelint-mixins",
-  "description": "Modern CSS/SCSS/Less linter for vscode, support auto fix on save, configFile, ignorePath, configBasedir,config, configOverrides.",
+  "description": "Modern CSS/SCSS/Less linter for vscode, support multiple options.",
   "publisher": "hisanshao",
   "repository": "https://github.com/hisanshao/vscode-stylelint-mixins",
   "homepage": "https://github.com/hisanshao/vscode-stylelint-mixins#readme",
@@ -104,6 +104,16 @@
           ],
           "default": null,
           "description": "A stylelint configuration object."
+        },
+        "stylelint.ignoreDisables": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, all disable comments (e.g. /* stylelint-disable block-no-empty */) will be ignored."
+        },
+        "stylelint.allowEmptyInput": {
+          "type": "boolean",
+          "default": false,
+          "description": "Control whether stylelint file can be empty or not."
         }
       }
     },

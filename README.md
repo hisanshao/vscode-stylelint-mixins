@@ -1,6 +1,6 @@
 # vscode-stylelint-mixins
 
-A [Visual Studio Code](https://code.visualstudio.com/) extension to lint [CSS](https://www.w3.org/Style/CSS/)/[SCSS](https://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax)/[Less](http://lesscss.org/) with [stylelint](https://stylelint.io/), support auto fix on save.
+A [Visual Studio Code](https://code.visualstudio.com/) extension to lint [CSS](https://www.w3.org/Style/CSS/)/[SCSS](https://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax)/[Less](http://lesscss.org/) with [stylelint](https://stylelint.io/), support multiple options.
 
 Fork from [vscode-stylelint-plus](https://github.com/hex-ci/vscode-stylelint-plus).
 
@@ -69,6 +69,20 @@ Type: `boolean`
 Default: `false`
 
 Turns auto fix on save on or off.
+
+#### stylelint.allowEmptyInput
+
+Type: `boolean`  
+Default: `false`
+
+Control whether stylelint file can be empty or not.
+
+#### stylelint.ignoreDisables
+
+Type: `boolean`  
+Default: `false`
+
+If true, all disable comments (e.g. /* stylelint-disable block-no-empty */) will be ignored.
 
 #### stylelint.configOverrides
 
