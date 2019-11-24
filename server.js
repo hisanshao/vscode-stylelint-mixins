@@ -23,6 +23,7 @@ async function validate(document, isAutoFixOnSave = false) {
     fix: isAutoFixOnSave,
     configBasedir: configBasedir,
     configFile: configFile,
+    ignorePath: ignorePath,
   };
 
   if (config) {
@@ -98,6 +99,9 @@ connection.onDidChangeConfiguration(({settings}) => {
   config = settings.stylelint.config;
   configOverrides = settings.stylelint.configOverrides;
   autoFixOnSave = settings.stylelint.autoFixOnSave;
+  configBasedir = settings.stylelint.configBasedir;
+  configFile = settings.stylelint.configFile;
+  ignorePath = settings.stylelint.ignorePath;
 
   validateAll();
 });
