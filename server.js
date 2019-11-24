@@ -11,13 +11,18 @@ const stylelintVSCode = require('./stylelint-vscode');
 let config;
 let configOverrides;
 let autoFixOnSave;
+let configBasedir;
+let ignorePath;
+let configFile;
 
 const connection = createConnection(ProposedFeatures.all);
 const documents = new TextDocuments();
 
 async function validate(document, isAutoFixOnSave = false) {
   const options = {
-    fix: isAutoFixOnSave
+    fix: isAutoFixOnSave,
+    configBasedir: configBasedir,
+    configFile: configFile,
   };
 
   if (config) {
@@ -43,8 +48,9 @@ async function validate(document, isAutoFixOnSave = false) {
         }
       }
     }
-
-    if (options.ignorePath === undefined) {
+    if (ignorePath) {
+      options.ignorePath = ignorePath
+    } else if (options.ignorePath === undefined) {
       options.ignorePath = join(findPkgDir(documentPath) || parse(documentPath).root, '.stylelintignore');
     }
   }

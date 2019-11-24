@@ -1,14 +1,14 @@
 {
-  "name": "stylelint-plus",
-  "version": "0.52.3",
-  "displayName": "stylelint-plus",
+  "name": "stylelint-mixins",
+  "version": "0.1.0",
+  "displayName": "stylelint-mixins",
   "description": "Modern CSS/SCSS/Less linter for vscode, support auto fix on save.",
-  "publisher": "hex-ci",
-  "repository": "https://github.com/hex-ci/vscode-stylelint-plus",
-  "homepage": "https://github.com/hex-ci/vscode-stylelint-plus#readme",
-  "bugs": "https://github.com/hex-ci/vscode-stylelint-plus/issues",
+  "publisher": "hi_sanshao",
+  "repository": "https://github.com/hi_sanshao/vscode-stylelint-mixins",
+  "homepage": "https://github.com/hi_sanshao/vscode-stylelint-mixins#readme",
+  "bugs": "https://github.com/hi_sanshao/vscode-stylelint-mixins/issues",
   "license": "ISC",
-  "icon": "media/icon.png",
+  "icon": "https://raw.githubusercontent.com/hi_sanshao/vscode-stylelint-mixins/master/media/icon.png",
   "galleryBanner": {
     "color": "#32CD32",
     "theme": "light"
@@ -80,6 +80,30 @@
           "type": "boolean",
           "default": false,
           "description": "Turns auto fix on save on or off."
+        },
+        "stylelint.configFile": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "A stylelint configuration object."
+        },
+        "stylelint.configBasedir": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "A stylelint configuration object."
+        },
+        "stylelint.ignorePath": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "A stylelint configuration object."
         }
       }
     },
