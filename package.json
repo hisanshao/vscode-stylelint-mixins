@@ -1,6 +1,6 @@
 {
   "name": "stylelint-mixins",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "stylelint-mixins",
   "description": "Modern CSS/SCSS/Less linter for vscode, support auto fix on save, configFile, ignorePath, configBasedir,config, configOverrides.",
   "publisher": "hisanshao",
