@@ -8,7 +8,7 @@
   "homepage": "https://github.com/hisanshao/vscode-stylelint-mixins#readme",
   "bugs": "https://github.com/hisanshao/vscode-stylelint-mixins/issues",
   "license": "ISC",
-  "icon": "https://raw.githubusercontent.com/hisanshao/vscode-stylelint-mixins/master/media/icon.png",
+  "icon": "media/icon.png",
   "galleryBanner": {
     "color": "#32CD32",
     "theme": "light"
